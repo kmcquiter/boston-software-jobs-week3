@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/style2.css">
+  <title>The Boston Software Jobs Database</title>
+</head>
+<body>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="./landing.html">BostonSWJobs</a>
+      </div>
+      <div class="collapse navbar-collapse">  <!-- Begin right-hand side of navbar -->
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="./login.html">Login</a></li>
+            <li><a href="./register.html">Sign up</a></li>
+        </ul>
+      </div>  <!-- End right-hand side of navbar -->
+    </div>  <!-- End of container-fluid -->
+  </nav> <!-- End of navbar -->
+
+<div class='container'>
+  
+  <header class='jumbotron'>
+    <div class='container'>
+      <h1>Boston Software Employers</h1>
+      <p>Here is our list of the top software employers in the Boston area.</p>
+    </div>
+  </header>
+  <div id="list">
+  </div>
+	<button id="displayAll" class='btn btn-primary btn-large'>Display list</button>
+  <button id="sortLlist" class='btn btn-primary btn-large'>Alphabetize</button>
+  <!-- Need display element here -->
+<p><br></p>
+	<p>Enter the information for a new company below.</p>
+  
+	<label for="compName">Name: </label>
+	<input type="text" id="compName" size="90" required><br>
+  <label for="compUrl">Url: </label>&nbsp&nbsp&nbsp&nbsp&nbsp
+  <input type="url" id="compUrl" size="90" name="website" required pattern="https?://.+"><br>
+  <label for="compBlurb">Blurb: </label>
+  <textarea id="compBlurb" rows="4" cols="92" style="resize: none;" required></textarea>
+<br>
+  <label id="validation"></label>
+
+<p><br></p>
+  <button id="addCompany" class='btn btn-primary btn-large'>Add a company</button>
+  <button id="clear" class='btn btn-primary btn-large'>Clear</button>
+  
+<!-- Need more input boxes here -->
+<!-- You can use the <textarea> element for a multi-line textbox -->
+</div> <!-- End of container div -->
+
+<p>Trademark 2018-2020 by CodeSquad at Lena Park</p>
+<script src="./js/bostonSW3.js"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+.img-list {
+	width: 200px;
+  }
+  /* Need some additional CSS for layout */
+  
+  .imgCard {
+	  border: 1px solid lightgray;
+  /* Do you need an additional flexbox property here? */
+	  width: 20%;
+  }
+  .compName {
+	  text-align: center;
+	  font-size: large;
+  }
+  .flex-container {
+	display: flex;
+	flex-wrap: wrap;
+  }
+  
+
+  
